@@ -6,6 +6,11 @@ export default {
       path: '',
       name: 'noEntrySelected',
       component: () => import('../views/NoEntrySelected')
+    },
+    {
+      path: ':id',
+      name: 'entry',
+      component: () => import('../views/EntryView')
     }
   ]
 }
